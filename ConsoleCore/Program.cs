@@ -1,5 +1,5 @@
 ﻿using System;
-using Library;
+using StandartLibrary;
 namespace ConsoleCore
 {
     class Program
@@ -21,7 +21,7 @@ namespace ConsoleCore
         }
         static void FooTask2(string username)
         {
-            var message = LibraryClass.Foo(username);
+            var message = LibraryClass.AddDateTimeNowToPhrase(username);
             Console.WriteLine(message);
         }
     }

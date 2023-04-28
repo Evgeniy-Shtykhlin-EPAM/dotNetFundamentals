@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Library;
+using StandartLibrary;
 namespace WindowsFormsFramework
 {
     public partial class Form1 : Form
@@ -15,7 +15,7 @@ namespace WindowsFormsFramework
         {
             MessageBox.Show($"Hello, {textBox1.Text}");
 
-            var message = LibraryClass.Foo(textBox1.Text);
+            var message = LibraryClass.AddDateTimeNowToPhrase(textBox1.Text);
             MessageBox.Show(message);
         }
     }

@@ -1,4 +1,4 @@
-﻿using Library;
+﻿using StandartLibrary;
 using System.Windows;
 
 namespace WpfFramework
@@ -17,7 +17,7 @@ namespace WpfFramework
         {
             MessageBox.Show($"Hello, {textbox.Text}");
 
-            var message = LibraryClass.Foo(textbox.Text);
+            var message = LibraryClass.AddDateTimeNowToPhrase(textbox.Text);
             MessageBox.Show(message);
         }
     }
